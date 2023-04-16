@@ -32,7 +32,7 @@ elsif memo_type == 2
   
   p "拡張子を除いたファイル名を入力してください"
   
-  file_name = gets.chomp.to_i
+  file_name = gets.chomp.to_s
   
   #該当するファイルが存在する場合
   if File.exist?("#{file_name}.csv")
